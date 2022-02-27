@@ -2,6 +2,8 @@
 
 这是一个采用前后端分离开发的项目，前端采用安卓开发、后端采用 Spring boot + Mybatis 开发。
 
+项目后端参考@[auggie](https://github.com/ruanjiancheng)的项目[StudentManageSystem](https://github.com/ruanjiancheng/StudentManageSystem)，在此表示感谢
+
 **2021/2022冬季学期 上海大学数据库大作业**
 
 
