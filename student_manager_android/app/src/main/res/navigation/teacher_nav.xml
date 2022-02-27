@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/teacher_nav"
+    app:startDestination="@id/openClassFragment">
+
+    <fragment
+        android:id="@+id/openClassFragment"
+        android:name="com.shu.studentmanager.fragment.OpenClassFragment"
+        android:label="open_class_fragment"
+        tools:layout="@layout/open_class_fragment" />
+    <fragment
+        android:id="@+id/teacherFragment"
+        android:name="com.shu.studentmanager.fragment.TeacherFragment"
+        android:label="教师"
+        tools:layout="@layout/teacher_fragment" />
+    <fragment
+        android:id="@+id/scoreManageFragment"
+        android:name="com.shu.studentmanager.fragment.ScoreManageFragment"
+        android:label="成绩管理"
+        tools:layout="@layout/score_manage_fragment" />
+
+    <fragment
+        android:id="@+id/studentFragment"
+        android:name="com.shu.studentmanager.fragment.StudentFragment"
+        android:label="学生"
+        tools:layout="@layout/student_fragment" />
+    <fragment
+        android:id="@+id/courseSearchFragment"
+        android:name="com.shu.studentmanager.fragment.CourseSearchFragment"
+        android:label="查看课程"
+        tools:layout="@layout/course_search_fragment" />
+    <fragment
+        android:id="@+id/courseSelectFragment"
+        android:name="com.shu.studentmanager.fragment.CourseSelectFragment"
+        android:label="选课"
+        tools:layout="@layout/course_select_fragment" />
+    <fragment
+        android:id="@+id/scoreReviewFragment"
+        android:name="com.shu.studentmanager.fragment.ScoreReviewFragment"
+        android:label="查看成绩"
+        tools:layout="@layout/score_review_fragment" />
+    <fragment
+        android:id="@+id/manageStudentFragment"
+        android:name="com.shu.studentmanager.fragment.ManageStudentFragment"
+        android:label="学生管理" />
+    <fragment
+        android:id="@+id/adminFragment"
+        android:name="com.shu.studentmanager.fragment.AdminFragment"
+        android:label="管理员"
+        tools:layout="@layout/admin_fragment" />
+    <fragment
+        android:id="@+id/manageTeacherFragment"
+        android:name="com.shu.studentmanager.fragment.ManageTeacherFragment"
+        android:label="教师管理"
+        tools:layout="@layout/manage_teacher_fragment" />
+    <fragment
+        android:id="@+id/manageCourseFragment"
+        android:name="com.shu.studentmanager.fragment.ManageCourseFragment"
+        android:label="课程管理"
+        tools:layout="@layout/manage_course_fragment" />
+    <fragment
+        android:id="@+id/openedFragment"
+        android:name="com.shu.studentmanager.fragment.OpenedFragment"
+        android:label="开课管理"
+        tools:layout="@layout/opened_fragment" />
+</navigation>

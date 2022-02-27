@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="score_manage_view_model"
+            type="com.shu.studentmanager.viewmodel.ScoreManageViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/move_linear_openclass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_weight="1"
+                                android:hint="学号"
+                                android:paddingRight="5dp"
+                                app:endIconMode="clear_text"
+                                app:errorTextAppearance="@style/MyAppTheme.TextInputLayout"
+                                app:startIconDrawable="@drawable/ic_baseline_123_24">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/score_manage_fragment_student_number"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_weight="1"
+                                android:hint="学生姓名"
+                                app:errorTextAppearance="@style/MyAppTheme.TextInputLayout"
+                                app:startIconDrawable="@drawable/ic_baseline_supervised_user_circle_24">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/score_manage_fragment_student_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_weight="1"
+                                android:hint="课程号"
+                                android:paddingRight="5dp"
+                                app:endIconMode="clear_text"
+                                app:errorTextAppearance="@style/MyAppTheme.TextInputLayout"
+                                app:startIconDrawable="@drawable/ic_baseline_123_24">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/score_manage_fragment_course_number"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_weight="1"
+                                android:hint="课程名"
+                                app:errorTextAppearance="@style/MyAppTheme.TextInputLayout"
+                                app:startIconDrawable="@drawable/ic_baseline_class_24">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/score_manage_fragment_course_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_weight="1"
+                                android:hint="成绩下限"
+                                app:errorTextAppearance="@style/MyAppTheme.TextInputLayout">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/score_manage_fragment_low"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_weight="1"
+                                android:hint="成绩上限"
+                                app:errorTextAppearance="@style/MyAppTheme.TextInputLayout">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/score_manage_fragment_high"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="number" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.switchmaterial.SwitchMaterial
+                                android:id="@+id/score_manage_fragment_fuzzy_search"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:paddingLeft="10dp"
+                                android:text="模糊查询" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/menu"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="学期"
+                                android:paddingLeft="30dp">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/score_manage_term_select"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="none"
+                                    android:text="22-春季学期"
+                                    tools:ignore="InvalidId" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/score_manage_fragment_linearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="轻触编辑学生成绩"
+                        android:textColor="@color/black"></TextView>
+                </LinearLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/score_manage_fragment_linearlayout">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow android:background="@color/white_10">
+
+                            <TextView
+                                android:layout_column="1"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="课程号"
+                                android:textSize="13sp"
+                                android:textStyle="bold"></TextView>
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_weight="3"
+                                android:padding="10dp"
+                                android:text="课程名称"
+                                android:textSize="13sp"
+                                android:textStyle="bold"></TextView>
+
+                            <TextView
+                                android:layout_column="1"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="学号"
+                                android:textSize="13sp"
+                                android:textStyle="bold"></TextView>
+
+                            <TextView
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:layout_weight="2"
+                                android:text="学生姓名"
+                                android:textSize="13sp"
+                                android:textStyle="bold"></TextView>
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_weight="2"
+                                android:padding="10dp"
+                                android:text="成绩"
+                                android:textSize="13sp"
+                                android:textStyle="bold"></TextView>
+
+                            <TextView
+                                android:gravity="center"
+                                android:layout_weight="4"
+                                android:padding="10dp"
+                                android:text="学期"
+                                android:textSize="13sp"
+                                android:textStyle="bold"></TextView>
+                        </TableRow>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/score_manage_fragment_recyclerview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+                    </TableLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</layout>

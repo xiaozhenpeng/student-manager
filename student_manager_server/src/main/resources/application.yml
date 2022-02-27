@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://101.35.20.64:3306/studentms?setUnicode=true&characterEncoding=utf8&useAffectedRows=true
+    username: root
+    password: Nokia5233!
+
+mybatis:
+  type-aliases-package: cn.shu.student_server.entity
+  mapper-locations: classpath:mapper/*.xml
+
+server:
+  port: 10086

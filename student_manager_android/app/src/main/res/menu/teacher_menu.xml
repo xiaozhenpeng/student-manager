@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/teacher_menu_group">
+        <item
+            android:id="@+id/teacherFragment"
+            android:title="个人信息" />
+        <item
+            android:id="@+id/openClassFragment"
+            android:title="开设课程" />
+        <item
+            android:id="@+id/scoreManageFragment"
+            android:title="成绩管理" />
+    </group>
+    <group android:id="@+id/student_menu_group">
+        <item
+            android:id="@+id/studentFragment"
+            android:title="个人信息" />
+        <item
+            android:id="@+id/scoreReviewFragment"
+            android:title="成绩查询" />
+        <item
+            android:id="@+id/courseSelectFragment"
+            android:title="选择课程" />
+<!--        <item-->
+<!--            android:id="@+id/courseSearchFragment"-->
+<!--            android:title="搜索课程" />-->
+    </group>
+    <group android:id="@+id/admin_menu_group">
+        <item
+            android:id="@+id/adminFragment"
+            android:title="个人信息"/>
+        <item
+            android:id="@+id/manageStudentFragment"
+            android:title="学生管理"/>
+        <item
+            android:id="@+id/manageCourseFragment"
+            android:title="课程管理"/>
+        <item
+            android:id="@+id/manageTeacherFragment"
+            android:title="教师管理"/>
+        <item
+            android:id="@+id/openedFragment"
+            android:title="开课管理"/>
+        <item
+            android:id="@+id/scoreManageFragment"
+            android:title="成绩管理"
+            tools:ignore="DuplicateIds" />
+    </group>
+</menu>

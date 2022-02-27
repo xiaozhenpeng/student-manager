@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyAppTheme.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/teal_700</item>
+    </style>
+    <style name="MySnackbar" parent="Widget.MaterialComponents.Snackbar">
+        <item name="android:layout_margin">20dp</item>
+    </style>
+</resources>

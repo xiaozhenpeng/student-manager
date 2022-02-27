@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="*">
+
+    <TableRow
+        android:foreground="?android:attr/selectableItemBackground">
+        <TextView
+            android:id="@+id/course_id_cid"
+            android:textSize="13sp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_column="1">
+        </TextView>
+        <TextView
+            android:id="@+id/course_name_cname"
+            android:textSize="13sp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textStyle="bold">
+        </TextView>
+        <TextView
+            android:id="@+id/course_credit_ccredit"
+            android:textSize="13sp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textStyle="bold">
+        </TextView>
+    </TableRow>
+</TableLayout>

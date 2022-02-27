@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">StudentManager</string>
+    <string name="openNavDrawer">Navigation Drawer Open</string>
+    <string name="closeNavDrawer">Navigation Drawer Close</string>
+    <string name="Usernamelabel">Acount</string>
+    <string name="PasswordLabel">Password</string>
+    <string name="log_in">登陆</string>
+    <string name="register">Register</string>
+</resources>
